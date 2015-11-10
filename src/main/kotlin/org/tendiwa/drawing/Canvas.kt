@@ -19,12 +19,6 @@ interface Canvas {
 
     val textLineHeight: Int
 
-    fun draw(drawable: Drawable) = drawable.drawIn(this)
-
-    fun drawAll(drawables: Collection<Drawable>) {
-        drawables.forEach { it.drawIn(this@Canvas) }
-    }
-
     fun draw(x: Int, y: Int, color: Color)
 
     fun draw(tile: Tile, color: Color)

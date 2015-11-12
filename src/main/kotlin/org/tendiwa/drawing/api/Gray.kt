@@ -1,4 +1,4 @@
-package org.tendiwa.drawing
+package org.tendiwa.drawing.api
 
 import java.awt.Color
 

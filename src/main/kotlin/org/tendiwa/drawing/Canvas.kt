@@ -6,7 +6,6 @@ import org.tendiwa.geometry.continuum.rectangles.Rectangle
 import org.tendiwa.geometry.continuum.segments.Segment
 import org.tendiwa.geometry.grid.dimensions.GridDimension
 import org.tendiwa.geometry.grid.rectangles.GridRectangle
-import org.tendiwa.geometry.grid.tiles.Tile
 import java.awt.Color
 
 /**
@@ -20,8 +19,6 @@ interface Canvas {
     val textLineHeight: Int
 
     fun draw(x: Int, y: Int, color: Color)
-
-    fun draw(tile: Tile, color: Color)
 
     fun draw(rectangle: Rectangle, color: Color)
 

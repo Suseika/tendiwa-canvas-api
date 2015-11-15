@@ -1,9 +1,9 @@
 package org.tendiwa.drawing.api
 
-import org.tendiwa.geometry.continuum.circles.Circle
-import org.tendiwa.geometry.continuum.points.Point
-import org.tendiwa.geometry.continuum.rectangles.Rectangle
-import org.tendiwa.geometry.continuum.segments.Segment
+import org.tendiwa.geometry.circles.Circle
+import org.tendiwa.geometry.points.Point
+import org.tendiwa.geometry.rectangles.Rectangle
+import org.tendiwa.geometry.segments.Segment
 import org.tendiwa.grid.dimensions.GridDimension
 import org.tendiwa.grid.rectangles.GridRectangle
 import java.awt.Color

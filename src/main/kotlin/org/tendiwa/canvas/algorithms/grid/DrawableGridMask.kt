@@ -1,5 +1,6 @@
-package org.tendiwa.drawing.api
+package org.tendiwa.canvas.algorithms.grid
 
+import org.tendiwa.canvas.api.Canvas
 import org.tendiwa.grid.masks.FiniteGridMask
 import org.tendiwa.grid.tiles.Tile
 import java.awt.Color

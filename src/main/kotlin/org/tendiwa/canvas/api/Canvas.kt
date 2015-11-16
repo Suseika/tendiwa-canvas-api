@@ -1,4 +1,4 @@
-package org.tendiwa.drawing.api
+package org.tendiwa.canvas.api
 
 import org.tendiwa.geometry.circles.Circle
 import org.tendiwa.geometry.points.Point

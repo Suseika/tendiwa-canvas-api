@@ -38,4 +38,6 @@ interface Canvas {
     fun clear()
 
     fun fillBackground(color: Color)
+
+    fun drawText(text: String, start: Point, color: Color)
 }

@@ -39,5 +39,5 @@ interface Canvas {
 
     fun fillBackground(color: Color)
 
-    fun drawText(text: String, start: Point, color: Color)
+    fun drawText(text: String, start: Point, color: Color, scale: Double = 1.0)
 }

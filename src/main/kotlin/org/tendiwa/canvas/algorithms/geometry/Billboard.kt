@@ -14,23 +14,28 @@ internal class Billboard(
     point: Point,
     text: String,
     canvas: Canvas,
-    postHeight: Double = 10.0,
-    padding: Double = 2.0
+    pixelPostHeight: Double = 10.0,
+    pixelPadding: Double = 2.0
 ) {
     val box: Rectangle
     val post: Segment
     val textStart: Point
+    val padding: Double = pixelPadding / canvas.scale
 
     init {
-        val rescaledPostHeight = postHeight / canvas.scale
-        val textWidth = (canvas.textWidth(text).toDouble()) / canvas.scale
-        val lineHeight = (canvas.textLineHeight.toDouble()) / canvas.scale
-        val rescaledPadding = padding / canvas.scale
-        post = point.spanVerticalSegment(rescaledPostHeight)
-        val boxHeight = lineHeight + rescaledPadding * 2
-        val boxWidth = textWidth + rescaledPadding * 2
+        val rescaledPostHeight = pixelPostHeight / canvas.scale
+        val textWidth: Double =
+            (canvas.textWidth(text).toDouble()) / canvas.scale
+        val lineHeight: Double =
+            (canvas.textLineHeight.toDouble()) / canvas.scale
+        post = point.spanVerticalSegment(-rescaledPostHeight)
+        val boxHeight: Double = lineHeight + padding * 2
+        val boxWidth: Double = textWidth + padding * 2
         box = Rectangle(post.end, boxWidth by boxHeight)
-            .move(boxWidth / 2, boxHeight)
-        textStart = box.start.move(rescaledPadding, boxHeight - rescaledPadding)
+            .move(-boxWidth / 2, -boxHeight)
+        println("box width is $boxWidth")
+        textStart = box.start.move(padding, boxHeight - padding)
+        println("text start is $textStart")
+        println("padding is $padding")
     }
 }

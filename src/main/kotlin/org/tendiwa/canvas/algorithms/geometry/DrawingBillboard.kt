@@ -14,9 +14,5 @@ fun Canvas.drawBillboard(
     val billboard = Billboard(point, text, this)
     this.draw(billboard.post, markerColor)
     this.draw(billboard.box, markerColor)
-//    this.draw(
-//        billboard.box.shrink(billboard.padding),
-//        Color.black
-//    )
     this.drawText(text, billboard.textStart, textColor, 1.0 / this.scale)
 }

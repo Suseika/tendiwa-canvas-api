@@ -26,7 +26,7 @@ private class Arrow(val shaft: Segment, arrowheadLength: Double) {
             )
             .plus(
                 shaft.vector
-                    .rotateQuarterClockwise()
+                    .rotatedQuarterClockwise
                     .times((-arrowheadLength / shaft.vector.magnitude))
             )
             .point
@@ -41,7 +41,7 @@ private class Arrow(val shaft: Segment, arrowheadLength: Double) {
             )
             .plus(
                 shaft.vector
-                    .rotateQuarterClockwise()
+                    .rotatedQuarterClockwise
                     .times(arrowheadLength / shaft.vector.magnitude)
             )
             .point

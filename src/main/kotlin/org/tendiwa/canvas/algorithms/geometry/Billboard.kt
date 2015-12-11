@@ -1,7 +1,7 @@
 package org.tendiwa.canvas.algorithms.geometry;
 
 import org.tendiwa.canvas.api.Canvas
-import org.tendiwa.geometry.constructors.spanVerticalSegment
+import org.tendiwa.geometry.points.spanVerticalSegment
 import org.tendiwa.geometry.dimensions.by
 import org.tendiwa.geometry.points.Point
 import org.tendiwa.geometry.points.move

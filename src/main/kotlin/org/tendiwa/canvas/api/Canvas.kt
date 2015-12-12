@@ -1,11 +1,11 @@
 package org.tendiwa.canvas.api
 
-import org.tendiwa.geometry.circles.Circle
-import org.tendiwa.geometry.points.Point
-import org.tendiwa.geometry.rectangles.Rectangle
-import org.tendiwa.geometry.segments.Segment
-import org.tendiwa.grid.dimensions.GridDimension
-import org.tendiwa.grid.rectangles.GridRectangle
+import org.tendiwa.plane.geometry.circles.Circle
+import org.tendiwa.plane.geometry.points.Point
+import org.tendiwa.plane.geometry.rectangles.Rectangle
+import org.tendiwa.plane.geometry.segments.Segment
+import org.tendiwa.plane.grid.dimensions.GridDimension
+import org.tendiwa.plane.grid.rectangles.GridRectangle
 import java.awt.Color
 
 /**

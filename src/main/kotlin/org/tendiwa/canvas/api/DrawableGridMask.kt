@@ -1,7 +1,7 @@
 package org.tendiwa.canvas.api
 
-import org.tendiwa.grid.masks.FiniteGridMask
-import org.tendiwa.grid.tiles.Tile
+import org.tendiwa.plane.grid.masks.FiniteGridMask
+import org.tendiwa.plane.grid.tiles.Tile
 import java.awt.Color
 
 fun Canvas.draw(mask: FiniteGridMask, color: Color) {

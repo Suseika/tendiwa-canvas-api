@@ -1,14 +1,14 @@
 package org.tendiwa.canvas.algorithms.geometry;
 
 import org.tendiwa.canvas.api.Canvas
-import org.tendiwa.geometry.points.spanVerticalSegment
-import org.tendiwa.geometry.dimensions.by
-import org.tendiwa.geometry.points.Point
-import org.tendiwa.geometry.points.move
-import org.tendiwa.geometry.rectangles.Rectangle
-import org.tendiwa.geometry.rectangles.move
-import org.tendiwa.geometry.rectangles.start
-import org.tendiwa.geometry.segments.Segment
+import org.tendiwa.plane.geometry.dimensions.by
+import org.tendiwa.plane.geometry.points.Point
+import org.tendiwa.plane.geometry.points.move
+import org.tendiwa.plane.geometry.points.spanVerticalSegment
+import org.tendiwa.plane.geometry.rectangles.Rectangle
+import org.tendiwa.plane.geometry.rectangles.move
+import org.tendiwa.plane.geometry.rectangles.start
+import org.tendiwa.plane.geometry.segments.Segment
 
 internal class Billboard(
     point: Point,

@@ -2,7 +2,7 @@ package org.tendiwa.canvas.algorithms.geometry
 
 import org.tendiwa.canvas.api.Canvas
 import org.tendiwa.canvas.api.inverse
-import org.tendiwa.geometry.points.Point
+import org.tendiwa.plane.geometry.points.Point
 import java.awt.Color
 
 fun Canvas.drawBillboard(

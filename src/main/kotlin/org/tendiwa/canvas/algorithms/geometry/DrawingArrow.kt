@@ -1,10 +1,10 @@
 package org.tendiwa.canvas.algorithms.geometry
 
 import org.tendiwa.canvas.api.Canvas
-import org.tendiwa.geometry.points.radiusVector
-import org.tendiwa.geometry.segments.Segment
-import org.tendiwa.geometry.segments.vector
-import org.tendiwa.geometry.vectors.*
+import org.tendiwa.plane.geometry.points.radiusVector
+import org.tendiwa.plane.geometry.segments.Segment
+import org.tendiwa.plane.geometry.segments.vector
+import org.tendiwa.plane.geometry.vectors.*
 import java.awt.Color
 
 fun Canvas.drawArrow(segment: Segment, color: Color, arrowheadLength: Double = 1.0) {

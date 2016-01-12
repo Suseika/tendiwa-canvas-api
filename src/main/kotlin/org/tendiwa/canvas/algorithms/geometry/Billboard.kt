@@ -28,11 +28,11 @@ internal class Billboard(
             (canvas.textWidth(text).toDouble()) / canvas.scale
         val lineHeight: Double =
             (canvas.textLineHeight.toDouble()) / canvas.scale
-        post = point.spanVerticalSegment(-rescaledPostHeight)
+        post = point.spanVerticalSegment(rescaledPostHeight)
         val boxHeight: Double = lineHeight + padding * 2
         val boxWidth: Double = textWidth + padding * 2
         box = Rectangle(post.end, boxWidth by boxHeight)
-            .move(-boxWidth / 2, -boxHeight)
-        textStart = box.start.move(padding, boxHeight - padding)
+            .move(-boxWidth / 2, 0.0)
+        textStart = box.start.move(padding, padding)
     }
 }

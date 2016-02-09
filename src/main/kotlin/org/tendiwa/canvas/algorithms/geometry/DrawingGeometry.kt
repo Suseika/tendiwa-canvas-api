@@ -7,16 +7,16 @@ import org.tendiwa.plane.geometry.polygons.Polygon
 import org.tendiwa.plane.geometry.shapes.SegmentGroup
 import java.awt.Color
 
-fun Canvas.draw(polygon: Polygon, color: Color) {
+fun Canvas.drawPolygon(polygon: Polygon, color: Color) {
     polygon.segments.forEach {
-        this.draw(it, color)
+        this.drawSegment(it, color)
     }
 }
 
-fun Canvas.draw(segmentGroup: SegmentGroup, color: Color) {
-    segmentGroup.segments.forEach { draw(it, color) }
+fun Canvas.drawSegmentGroup(segmentGroup: SegmentGroup, color: Color) {
+    segmentGroup.segments.forEach { drawSegment(it, color) }
 }
 
-fun Canvas.draw(point: Point, color: Color, radius: Double) {
-    draw(Circle(point, radius), color)
+fun Canvas.drawPoint(point: Point, color: Color, radius: Double) {
+    drawCircle(Circle(point, radius), color)
 }

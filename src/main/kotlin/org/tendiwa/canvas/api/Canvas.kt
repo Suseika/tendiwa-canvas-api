@@ -18,17 +18,17 @@ interface Canvas {
 
     val textLineHeight: Int
 
-    fun draw(x: Int, y: Int, color: Color)
+    fun drawCircle(x: Int, y: Int, color: Color)
 
-    fun draw(rectangle: Rectangle, color: Color)
+    fun drawRectangle(rectangle: Rectangle, color: Color)
 
-    fun draw(rectangle: GridRectangle, color: Color)
+    fun drawGridRectangle(rectangle: GridRectangle, color: Color)
 
-    fun write(text: String, start: Point, color: Color)
+    fun drawText(text: String, start: Point, color: Color)
 
-    fun draw(segment: Segment, color: Color)
+    fun drawSegment(segment: Segment, color: Color)
 
-    fun draw(circle: Circle, color: Color)
+    fun drawCircle(circle: Circle, color: Color)
 
     /**
      * Width of a text in pixels if it was to be drawn in this canvas.

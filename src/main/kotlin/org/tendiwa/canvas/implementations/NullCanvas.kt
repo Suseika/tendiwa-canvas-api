@@ -21,22 +21,22 @@ class NullCanvas() : Canvas {
     override val textLineHeight: Int
         get() = 1
 
-    override fun draw(x: Int, y: Int, color: Color) {
+    override fun drawCircle(x: Int, y: Int, color: Color) {
     }
 
-    override fun draw(rectangle: Rectangle, color: Color) {
+    override fun drawRectangle(rectangle: Rectangle, color: Color) {
     }
 
-    override fun draw(rectangle: GridRectangle, color: Color) {
+    override fun drawGridRectangle(rectangle: GridRectangle, color: Color) {
     }
 
-    override fun write(text: String, start: Point, color: Color) {
+    override fun drawText(text: String, start: Point, color: Color) {
     }
 
-    override fun draw(segment: Segment, color: Color) {
+    override fun drawSegment(segment: Segment, color: Color) {
     }
 
-    override fun draw(circle: Circle, color: Color) {
+    override fun drawCircle(circle: Circle, color: Color) {
     }
 
     override fun textWidth(text: String): Int =

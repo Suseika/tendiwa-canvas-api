@@ -6,9 +6,9 @@ import org.tendiwa.plane.grid.tiles.Tile
 import java.awt.Color
 
 fun Canvas.drawGridMask(mask: FiniteGridMask, color: Color) {
-    mask.tiles.forEach { this.draw(it, color) }
+    mask.tiles.forEach { this.drawTile(it, color) }
 }
 
-fun Canvas.draw(tile: Tile, color: Color) {
-    this.draw(tile.x, tile.y, color)
+fun Canvas.drawTile(tile: Tile, color: Color) {
+    this.drawCircle(tile.x, tile.y, color)
 }

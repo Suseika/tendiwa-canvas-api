@@ -12,7 +12,7 @@ fun Canvas.drawBillboard(
     markerColor: Color = textColor.inverse
 ) {
     val billboard = Billboard(point, text, this)
-    draw(billboard.post, markerColor)
-    draw(billboard.box, markerColor)
+    drawSegment(billboard.post, markerColor)
+    drawRectangle(billboard.box, markerColor)
     drawText(text, billboard.textStart, textColor, 1.0 / this.scale)
 }

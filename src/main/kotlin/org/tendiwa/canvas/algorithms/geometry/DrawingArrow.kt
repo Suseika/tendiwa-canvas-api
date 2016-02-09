@@ -10,9 +10,9 @@ import java.awt.Color
 fun Canvas.drawArrow(segment: Segment, color: Color, arrowheadLength: Double = 1.0) {
     Arrow(segment, arrowheadLength / this.scale)
         .apply {
-            this@drawArrow.draw(shaft, color)
-            this@drawArrow.draw(rightHalfArrow, color)
-            this@drawArrow.draw(leftHalfArrow, color)
+            this@drawArrow.drawSegment(shaft, color)
+            this@drawArrow.drawSegment(rightHalfArrow, color)
+            this@drawArrow.drawSegment(leftHalfArrow, color)
         }
 }
 

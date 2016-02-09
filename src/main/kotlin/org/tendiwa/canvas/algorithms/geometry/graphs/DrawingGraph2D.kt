@@ -5,6 +5,6 @@ import org.tendiwa.graphs.edges
 import org.tendiwa.plane.geometry.graphs.Graph2D
 import java.awt.Color
 
-fun Canvas.draw(graph: Graph2D, color: Color) {
-    graph.edges.forEach { draw(it, color) }
+fun Canvas.drawGraph2D(graph: Graph2D, color: Color) {
+    graph.edges.forEach { drawSegment(it, color) }
 }

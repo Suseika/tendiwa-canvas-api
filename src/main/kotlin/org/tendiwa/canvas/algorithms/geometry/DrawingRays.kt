@@ -16,13 +16,13 @@ fun Canvas.drawRay(ray: Ray, color: Color) {
         .toRectangle()
         .apply {
             if (contains(ray.start)) {
-                draw(ray.start, color, 2.0)
+                drawPoint(ray.start, color, 2.0)
             }
         }
         .let { ray.closestIntersection(it) }
         .apply {
             if (this != null) {
-                draw(ray.segment(ray.start.distanceTo(this) + 1.0), color)
+                drawSegment(ray.segment(ray.start.distanceTo(this) + 1.0), color)
             }
         }
 }

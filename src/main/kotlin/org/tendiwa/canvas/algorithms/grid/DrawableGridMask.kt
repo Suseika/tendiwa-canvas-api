@@ -13,6 +13,6 @@ fun Canvas.drawTile(tile: Tile, color: Color) {
     this.drawCircle(tile.x, tile.y, color)
 }
 
-fun Canvas.drawGridMask(mask: FiniteGridMask, getColor: ()->Color) {
-    mask.tiles.forEach { this.drawTile(it, getColor()) }
+fun Canvas.drawGridMask(mask: FiniteGridMask, getColor: (Tile)->Color) {
+    mask.tiles.forEach { this.drawTile(it, getColor(it)) }
 }

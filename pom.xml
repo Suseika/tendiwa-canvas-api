@@ -6,11 +6,11 @@
         <artifactId>parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>drawing-api</artifactId>
+    <artifactId>canvas-api</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>tendiwa-drawing-api</name>
+    <name>tendiwa-canvas-api</name>
     <description>Drawing API for Tendiwa Project that provides a backend-agnostic set of commands to draw raster images</description>
 
     <dependencies>

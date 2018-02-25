@@ -8,3 +8,6 @@ import java.awt.Color
 fun Canvas.drawGraph2D(graph: Graph2D, color: Color) {
     graph.edges.forEach { drawSegment(it, color) }
 }
+
+fun Graph2D.draw(canvas: Canvas, color: Color) =
+    canvas.drawGraph2D(this, color)

@@ -4,11 +4,15 @@ import org.tendiwa.canvas.api.Canvas
 import org.tendiwa.plane.geometry.points.radiusVector
 import org.tendiwa.plane.geometry.segments.Segment
 import org.tendiwa.plane.geometry.segments.vector
-import org.tendiwa.plane.geometry.vectors.*
+import org.tendiwa.plane.geometry.vectors.magnitude
+import org.tendiwa.plane.geometry.vectors.plus
+import org.tendiwa.plane.geometry.vectors.point
+import org.tendiwa.plane.geometry.vectors.rotatedQuarterCCW
+import org.tendiwa.plane.geometry.vectors.times
 import java.awt.Color
 
-fun Canvas.drawArrow(segment: Segment, color: Color, arrowheadLength: Double = 1.0) {
-    Arrow(segment, arrowheadLength / this.scale)
+fun Canvas.drawArrow(arrow: Arrow, color: Color) {
+    arrow
         .apply {
             this@drawArrow.drawSegment(shaft, color)
             this@drawArrow.drawSegment(rightHalfArrow, color)
@@ -16,7 +20,7 @@ fun Canvas.drawArrow(segment: Segment, color: Color, arrowheadLength: Double = 1
         }
 }
 
-private class Arrow(val shaft: Segment, arrowheadLength: Double) {
+class Arrow(val shaft: Segment, arrowheadLength: Double = 1.0) {
     val rightHalfArrow = Segment(
         shaft.end,
         shaft.end.radiusVector
@@ -47,3 +51,6 @@ private class Arrow(val shaft: Segment, arrowheadLength: Double) {
             .point
     )
 }
+
+fun Arrow.draw(canvas: Canvas, color: Color) =
+    canvas.drawArrow(this, color)

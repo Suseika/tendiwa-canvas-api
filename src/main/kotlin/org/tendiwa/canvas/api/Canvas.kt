@@ -26,6 +26,8 @@ interface Canvas {
 
     fun drawText(text: String, start: Point, color: Color)
 
+    fun drawText(text: String, start: Point, color: Color, fontScale: Double = 1.0)
+
     fun drawSegment(segment: Segment, color: Color)
 
     fun drawCircle(circle: Circle, color: Color)
@@ -39,5 +41,19 @@ interface Canvas {
 
     fun fillBackground(color: Color)
 
-    fun drawText(text: String, start: Point, color: Color, fontScale: Double = 1.0)
 }
+
+fun Circle.draw(canvas: Canvas, color: Color) =
+    canvas.drawCircle(this, color)
+
+fun Rectangle.draw(canvas: Canvas, color: Color) =
+    canvas.drawRectangle(this, color)
+
+fun GridRectangle.draw(canvas: Canvas, color: Color) =
+    canvas.drawGridRectangle(this, color)
+
+fun String.draw(canvas: Canvas, start: Point, color: Color, fontScale: Double = 1.0) =
+    canvas.drawText(this, start, color, fontScale)
+
+fun Segment.draw(canvas: Canvas, color: Color) =
+    canvas.drawSegment(this, color)

@@ -27,3 +27,5 @@ fun Canvas.drawRay(ray: Ray, color: Color) {
         }
 }
 
+fun Ray.draw(canvas: Canvas, color: Color) =
+    canvas.drawRay(this, color)

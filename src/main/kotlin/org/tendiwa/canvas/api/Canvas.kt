@@ -4,7 +4,6 @@ import org.tendiwa.plane.geometry.circles.Circle
 import org.tendiwa.plane.geometry.points.Point
 import org.tendiwa.plane.geometry.rectangles.Rectangle
 import org.tendiwa.plane.geometry.segments.Segment
-import org.tendiwa.plane.grid.dimensions.GridDimension
 import org.tendiwa.plane.grid.rectangles.GridRectangle
 import java.awt.Color
 
@@ -14,7 +13,7 @@ import java.awt.Color
 interface Canvas {
     val scale: Int
 
-    val size: GridDimension
+    val viewport: GridRectangle
 
     val textLineHeight: Int
 

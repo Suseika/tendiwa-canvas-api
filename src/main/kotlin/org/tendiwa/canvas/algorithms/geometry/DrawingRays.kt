@@ -7,12 +7,11 @@ import org.tendiwa.plane.geometry.rays.Ray
 import org.tendiwa.plane.geometry.rays.closestIntersection
 import org.tendiwa.plane.geometry.rays.segment
 import org.tendiwa.plane.geometry.rectangles.contains
-import org.tendiwa.plane.grid.constructors.GridRectangle
 import java.awt.Color
 
 
 fun Canvas.drawRay(ray: Ray, color: Color) {
-    GridRectangle(size)
+    viewport
         .toRectangle()
         .apply {
             if (contains(ray.start)) {

@@ -5,8 +5,6 @@ import org.tendiwa.plane.geometry.circles.Circle
 import org.tendiwa.plane.geometry.points.Point
 import org.tendiwa.plane.geometry.rectangles.Rectangle
 import org.tendiwa.plane.geometry.segments.Segment
-import org.tendiwa.plane.grid.dimensions.GridDimension
-import org.tendiwa.plane.grid.dimensions.by
 import org.tendiwa.plane.grid.rectangles.GridRectangle
 import java.awt.Color
 
@@ -16,10 +14,9 @@ import java.awt.Color
 class NullCanvas() : Canvas {
     override val scale: Int
         get() = 1
-    override val size: GridDimension
-        get() = 1 by 1
     override val textLineHeight: Int
         get() = 1
+    override val viewport: GridRectangle = GridRectangle(0, 0, 1, 1)
 
     override fun drawCircle(x: Int, y: Int, color: Color) {
     }

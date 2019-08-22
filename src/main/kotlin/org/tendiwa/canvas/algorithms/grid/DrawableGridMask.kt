@@ -10,7 +10,7 @@ fun Canvas.drawGridMask(mask: FiniteGridMask, color: Color) {
 }
 
 fun Canvas.drawTile(tile: Tile, color: Color) {
-    this.drawCircle(tile.x, tile.y, color)
+    this.drawPixel(tile.x, tile.y, color)
 }
 
 fun FiniteGridMask.draw(canvas: Canvas, color: Color) =

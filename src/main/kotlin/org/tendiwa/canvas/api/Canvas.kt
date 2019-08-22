@@ -17,7 +17,7 @@ interface Canvas {
 
     val textLineHeight: Int
 
-    fun drawCircle(x: Int, y: Int, color: Color)
+    fun drawPixel(x: Int, y: Int, color: Color)
 
     fun drawRectangle(rectangle: Rectangle, color: Color)
 
@@ -29,7 +29,7 @@ interface Canvas {
 
     fun drawSegment(segment: Segment, color: Color)
 
-    fun drawCircle(circle: Circle, color: Color)
+    fun drawPixel(circle: Circle, color: Color)
 
     /**
      * Width of a text in pixels if it was to be drawn in this canvas.
@@ -43,7 +43,7 @@ interface Canvas {
 }
 
 fun Circle.draw(canvas: Canvas, color: Color) =
-    canvas.drawCircle(this, color)
+    canvas.drawPixel(this, color)
 
 fun Rectangle.draw(canvas: Canvas, color: Color) =
     canvas.drawRectangle(this, color)

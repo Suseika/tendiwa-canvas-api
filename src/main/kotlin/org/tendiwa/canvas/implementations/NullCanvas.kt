@@ -18,7 +18,7 @@ class NullCanvas() : Canvas {
         get() = 1
     override val viewport: GridRectangle = GridRectangle(0, 0, 1, 1)
 
-    override fun drawCircle(x: Int, y: Int, color: Color) {
+    override fun drawPixel(x: Int, y: Int, color: Color) {
     }
 
     override fun drawRectangle(rectangle: Rectangle, color: Color) {
@@ -33,7 +33,7 @@ class NullCanvas() : Canvas {
     override fun drawSegment(segment: Segment, color: Color) {
     }
 
-    override fun drawCircle(circle: Circle, color: Color) {
+    override fun drawPixel(circle: Circle, color: Color) {
     }
 
     override fun textWidth(text: String): Int =

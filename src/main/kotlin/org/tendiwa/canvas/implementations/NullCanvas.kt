@@ -33,7 +33,7 @@ class NullCanvas() : Canvas {
     override fun drawSegment(segment: Segment, color: Color) {
     }
 
-    override fun drawPixel(circle: Circle, color: Color) {
+    override fun drawCircle(circle: Circle, color: Color) {
     }
 
     override fun textWidth(text: String): Int =

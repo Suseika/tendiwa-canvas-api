@@ -21,7 +21,7 @@ fun Canvas.drawSegmentGroup(segmentGroup: SegmentGroup, color: Color) {
 }
 
 fun Canvas.drawPoint(point: Point, color: Color, radius: Double) {
-    drawPixel(Circle(point, radius), color)
+    drawCircle(Circle(point, radius), color)
 }
 
 fun Polygon.draw(canvas: Canvas, color: Color) =

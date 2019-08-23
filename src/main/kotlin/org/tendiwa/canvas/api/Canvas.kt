@@ -29,7 +29,7 @@ interface Canvas {
 
     fun drawSegment(segment: Segment, color: Color)
 
-    fun drawPixel(circle: Circle, color: Color)
+    fun drawCircle(circle: Circle, color: Color)
 
     /**
      * Width of a text in pixels if it was to be drawn in this canvas.
@@ -43,7 +43,7 @@ interface Canvas {
 }
 
 fun Circle.draw(canvas: Canvas, color: Color) =
-    canvas.drawPixel(this, color)
+    canvas.drawCircle(this, color)
 
 fun Rectangle.draw(canvas: Canvas, color: Color) =
     canvas.drawRectangle(this, color)

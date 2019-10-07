@@ -11,8 +11,14 @@ val Color.saturation: Float
 val Color.brightness: Float
     get() = hsb[2]
 
-private val Color.hsb: FloatArray
+ val Color.hsb: FloatArray
     get() = Color.RGBtoHSB(red, green, blue, null)
 
+fun Color.rotateHue(amount: Double): Color {
+    val hsb = this.hsb
+    hsb[0]+= amount.toFloat()
+    hsb[0] %= 1.0f
+    return Color.getHSBColor(hsb[0], hsb[1], hsb[2])
+}
 
 
